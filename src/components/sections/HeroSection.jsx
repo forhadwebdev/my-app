@@ -8,9 +8,9 @@ export default function HeroSection() {
       <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] min-w-[300px] min-h-[300px] bg-blue-600/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
       <div className="absolute bottom-[-10%] left-[20%] w-[70vw] h-[30vw] min-w-[400px] min-h-[200px] bg-red-600/15 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
 
-      {/* Main Container */}
-      <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between">
-        {/* Left Side Text (সাইজ আগের মতোই ছোট এবং লোগোর সাথে এলাইন করা) */}
+      {/* 🚀 Main Container - এখানেই সমস্যাটি ছিল, এখন ঠিক করে দেওয়া হয়েছে */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+        {/* Left Side Text */}
         <div className="w-full md:w-1/2 max-w-[550px] space-y-3 text-center md:text-left z-10 mt-12 md:mt-0">
           <p className="text-gray-400 text-base md:text-lg">Hi There! I'm</p>
 
@@ -38,9 +38,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Side - Profile + Orbit (আগের ছোট সাইজে ফিরিয়ে আনা হয়েছে) */}
+        {/* Right Side - Profile + Orbit */}
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center mt-10 md:mt-0 overflow-visible">
-          {/* Outer container (নির্দিষ্ট সাইজ দেওয়া হয়েছে যাতে বড় না হয়) */}
           <div className="relative w-[70vw] sm:w-[80vw] md:max-w-[420px] lg:max-w-[460px] aspect-square flex items-center justify-center overflow-visible">
             {/* Profile Image */}
             <div className="relative w-[62%] aspect-square rounded-full overflow-hidden shadow-[0_0_60px_rgba(255,0,0,0.8)] z-10">
